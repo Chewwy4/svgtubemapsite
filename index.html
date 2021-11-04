@@ -61,6 +61,12 @@ margin:25px
    min-height: 100vh;
    z-index: 5000;
    opacity: 0;
+   pointer-events: none;
+   transition: opacity 0.3s ease;
+}
+.modalContainer.show{
+   opacity:1;
+   pointer-events: auto;
 }
 .modal{
 background-color: white;
@@ -83,7 +89,7 @@ text-align: center;
          possimus sunt vel nesciunt sapiente est esse, quae quisquam pariatur deleniti 
          repellat explicabo labore voluptas mollitia ut maiores laudantium, quibusdam tempora?
       </p>
-      
+      <button id="close">Open Site</button>
       <button id="GoExtSite">Open Site</button>
    </div> </div>
 
@@ -1466,10 +1472,25 @@ node buttons: class = nodeBtn. onclick = doSomething()
 
 
 
-<script src="./src/js/jquery-3.6.0.min.js"></script>
+
 <script>
 
+//open
+let nodeBtn = document.getElementById('nodeBtnClock')
+let modalContainer = document.getElementById('modalContainer')
+let close = document.getElementById('close')
+
+nodeBtn.addEventListener('click', () => {
+modalContainer.classList.add('show')
+
+});
+close.addEventListener('click', () => {
+   modalContainer.classList.remove('show')
+
+});
 document.addEventListener("load", onLoadFunction);
+
+
 function onLoadFunction(e){
    
 }
@@ -1477,13 +1498,9 @@ function onLoadFunction(e){
 function onWindowResize(){
 }
 
-
 //TEST SCRIPTS FOR SVG
 function doSomething(){
-   console.log('svg image onclick!');
 
-   $("#itemBox").stop(true).animate({height:"5%"}, 200);   
- //  $(".prevBox").appendTo($("#nodeBtnClock"));
 }
 </script>
 </body>
