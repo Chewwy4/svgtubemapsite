@@ -27,7 +27,7 @@
     background-color: rgb(255, 255, 255);
     position: relative;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 600px) {
 		.svgcontainer{
 			width: 100%;	
             margin-left: 0;
@@ -73,13 +73,18 @@
             border: 1px solid #888;
             border-radius: 5px;
             padding: 10px 20px;
-            width:800px;
+            width:900px;
             max-width: 100%;
-            height:60vh;
+            height:30rem;
             box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
             text-align: center;
         }
-
+        @media screen and (max-width: 600px) {
+		.modal-content{
+         width: 850px;
+         height:30rem;
+		}
+}
         /* The Close Button */
         .close {
             color: #aaaaaa;
@@ -97,11 +102,18 @@
         }
         .prevImg{
     width: 100%; 
-    max-width: 300px; 
+    max-width: 450px; 
     height: auto; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
+        @media screen and (max-width: 600px) {
+		.prevImg{
+         max-width: 450px;
+		}
+}
         button{
-   background-color: rgb(64, 147, 224);
+   background-color: rgb(0, 0, 0);
+   color: #ffb107;
    border:0;
 border-radius: 5px;
 box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -140,11 +152,13 @@ margin:20px
         <div class="modal-content">
             <span class="close close_multi">×</span>
             <p>three.js clock</p>
-            <img src="./src/image/0x0.jpg" class="prevImg"><br>
+            <video class="prevImg" id="vid2" autoplay repeat>
+               <source src="./src/video/clock3.m4v" type="video/mp4">
+           </video><br>
             <button id="GoExtSite">Open Site</button>
         </div>
     </div>
-    
+   
 
     <!-- The Modal #3-->
     <div class="modal modal_multi">
@@ -1549,16 +1563,16 @@ margin:20px
 
 
 
-    <!-- The Modal -->
-    <!-- <div id="myModal" class="modal">
-    </div> -->
 
     <script>
+var vid = document.getElementById("vid2");
+function enableAutoplay() { 
+  vid.autoplay = true;
+  vid.load();
+}
 
- 
 
-
-
+                     //modal
                 // Get the modal
 
         var modalparent = document.getElementsByClassName("modal_multi");
@@ -1602,17 +1616,10 @@ margin:20px
         }
 
         window.onload = function() {
-            
-        };
+          
+         setDataIndex();  
 
-
-
-        window.addEventListener("load", onLoadFunction);
-        function onLoadFunction(e){
-    
-    setDataIndex();
-
-     var svgHeadTxtResize = document.getElementsByClassName("svgHeaderTxt"); 
+            var svgHeadTxtResize = document.getElementsByClassName("svgHeaderTxt"); 
         for (var i=0; i<svgHeadTxtResize.length; i++) {     
             if (window.innerWidth <810 ) {
   svgHeadTxtResize[i].style.fontSize = "32em";   
@@ -1628,12 +1635,17 @@ margin:20px
         if (window.innerWidth <810 ) {
       svgTxtResize[i].style.fontSize = "30em"; 
         }
-        // else if (window.innerHeight <= 600) {
-        //     camera.position.set(0, 150, 400);
-        //  }
         else {
             svgTxtResize[i].style.fontSize = "24em"; 
-        }}}
+        }}
+        }
+
+
+
+        window.addEventListener("load", onLoadFunction);
+        function onLoadFunction(e){
+
+}
   
         
         function doSomething(){
