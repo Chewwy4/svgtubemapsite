@@ -84,12 +84,12 @@ text-align: center;
 
 <div class = "modalContainer" id="modalContainer">
    <div class="modal">
-      <h1>Modals are good</h1><span>ghreerh</span>
+      <h1>Modal</h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae 
          possimus sunt vel nesciunt sapiente est esse, quae quisquam pariatur deleniti 
          repellat explicabo labore voluptas mollitia ut maiores laudantium, quibusdam tempora?
       </p>
-      <button id="close">Open Site</button>
+      <button id="close">Close</button>
       <button id="GoExtSite">Open Site</button>
    </div> </div>
 
@@ -1482,11 +1482,9 @@ let close = document.getElementById('close')
 
 nodeBtn.addEventListener('click', () => {
 modalContainer.classList.add('show')
-
 });
 close.addEventListener('click', () => {
    modalContainer.classList.remove('show')
-
 });
 document.addEventListener("load", onLoadFunction);
 
