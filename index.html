@@ -75,7 +75,7 @@
             padding: 10px 20px;
             width:400px;
             max-width: 100%;
-            height:30rem;
+            height:25rem;
             box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
             text-align: center;
             margin-top: 0;
@@ -143,7 +143,7 @@ margin:20px
             <span class="close close_multi">×</span>
             <p>three.js Swiss army knife</p>
             <video class="prevImg" id="vid1" loop="true">
-               <source src="./src/video/clock2.m4v" type="video/mp4">
+               <source src="./src/video/prev_swiss.m4v" type="video/mp4">
            </video><br>
             <button id="GoExtSite">Open Site</button>
         </div>
@@ -156,7 +156,7 @@ margin:20px
             <span class="close close_multi">×</span>
             <p>three.js clock</p>
             <video class="prevImg" id="vid2" loop="true">
-               <source src="./src/video/clock2.m4v" type="video/mp4">
+               <source src="./src/video/prev_clock.m4v" type="video/mp4">
            </video><br>
             <button id="GoExtSite">Open Site</button>
         </div>
@@ -1516,19 +1516,21 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
                   if (ElementIndex==0){
                   console.log(ElementIndex, 'BOOOOM!');
                   const vid1 = document.getElementById("vid1");
-                  // vid2.autoplay = true;
-                  //  vid2.load();
                   vid1.play();
                   }  
 
                   if (ElementIndex==1){
                   const vid2 = document.getElementById("vid2");
-                  // vid2.autoplay = true;
-                  // vid2.load();
                    vid2.play();
                }
-
-            
+               if (ElementIndex==2){
+                  const vid2 = document.getElementById("vid2");
+                   vid2.play();
+               }
+               if (ElementIndex==4){
+                  const vid2 = document.getElementById("vid2");
+                   vid2.play();
+               }
             
             
             
@@ -1539,8 +1541,21 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
                 var ElementIndex = this.getAttribute('data-index');
                 modalparent[ElementIndex].style.opacity = 0;
                 modalparent[event.target.getAttribute('data-index')].style.pointerEvents = "none";
-            };
 
+               if (ElementIndex==0){
+                  const vid1 = document.getElementById("vid1");
+                  // vid2.autoplay = true;
+                  //  vid2.load();
+                  vid1.pause();
+                  console.log('video paused')
+                  }  
+               if (ElementIndex==1){
+                  const vid2 = document.getElementById("vid2");
+                  // vid2.autoplay = true;
+                  // vid2.load();
+                   vid2.pause();
+               }
+            };
         }
 
 
@@ -1568,7 +1583,7 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
       svgTxtResize[i].style.fontSize = "30em"; 
         }
         else {
-            svgTxtResize[i].style.fontSize = "24em"; 
+         svgTxtResize[i].style.fontSize = "24em"; 
         }}
         }
 
