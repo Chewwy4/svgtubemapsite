@@ -142,7 +142,9 @@ margin:20px
         <div class="modal-content">
             <span class="close close_multi">×</span>
             <p>three.js Swiss army knife</p>
-            <img src="./src/image/0x0.jpg" class="prevImg"><br>
+            <video class="prevImg" id="vid1" loop="true">
+               <source src="./src/video/clock2.m4v" type="video/mp4">
+           </video><br>
             <button id="GoExtSite">Open Site</button>
         </div>
     </div>
@@ -167,6 +169,8 @@ margin:20px
         <div class="modal-content">
             <span class="close close_multi">×</span>
             <p>Some text in the Modal..33333</p>
+            <img src="./src/image/0x0.jpg" class="prevImg"><br>
+            <button id="GoExtSite">Open Site</button>
         </div>
     </div>
 
@@ -1470,11 +1474,7 @@ margin:20px
 
 
     <script>
-var vid = document.getElementById("vid2");
-function enableAutoplay() { 
-  vid.autoplay = true;
-  vid.load();
-}
+
 document.querySelector('svg').addEventListener('touchstart', () => {});
 
                      //modal
@@ -1508,7 +1508,20 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
                 var ElementIndex = this.getAttribute('data-index');
                 modalparent[ElementIndex].style.opacity = 1;
                 modalparent[event.target.getAttribute('data-index')].style.pointerEvents = "auto";
-        
+
+            // if (modal_btn_multi.length[ElementIndex]){
+                console.log(ElementIndex, 'was selected');
+            // }  
+               if (ElementIndex==1){
+
+                  console.log(ElementIndex, 'BOOOOM!');
+                    const vid = document.getElementById("vid2");
+                     function enableAutoplay() { 
+                     vid.autoplay = false;
+                     vid.load();
+                     }
+
+               }
             };
 
             // When the user clicks on <span> (x), close the modal
@@ -1520,24 +1533,28 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
 
         }
 
+
         window.onload = function() {
-          
+          //set the data index on load - use if else for video player
          setDataIndex();  
 
-            var svgHeadTxtResize = document.getElementsByClassName("svgHeaderTxt"); 
+         //resize the svg header text on page load
+         //loop through all svg text 
+        let svgHeadTxtResize = document.getElementsByClassName("svgHeaderTxt"); 
         for (var i=0; i<svgHeadTxtResize.length; i++) {     
-            if (window.innerWidth <810 ) {
-  svgHeadTxtResize[i].style.fontSize = "32em";   
+            if (window.innerWidth <800 ) {
+         svgHeadTxtResize[i].style.fontSize = "32em";   
             }
             else{
             svgHeadTxtResize[i].style.fontSize = "25em"; 
         }}
-
-    var svgTxtResize = document.getElementsByClassName("svgLabelsTxt");
+         //resize the svg node button text on page load
+         //loop through all node button text
+      let svgTxtResize = document.getElementsByClassName("svgLabelsTxt");
        for (var i=0; i<svgTxtResize.length; i++) {
            console.log(svgTxtResize);
-        //do the magic you want 
-        if (window.innerWidth <810 ) {
+        
+        if (window.innerWidth <800 ) {
       svgTxtResize[i].style.fontSize = "30em"; 
         }
         else {
