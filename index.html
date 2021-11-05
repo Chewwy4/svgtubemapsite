@@ -155,7 +155,7 @@ margin:20px
         <div class="modal-content">
             <span class="close close_multi">×</span>
             <p>three.js clock</p>
-            <video class="prevImg" id="vid2" autoplay loop="true">
+            <video class="prevImg" id="vid2" loop="true">
                <source src="./src/video/clock2.m4v" type="video/mp4">
            </video><br>
             <button id="GoExtSite">Open Site</button>
@@ -1512,16 +1512,26 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
             // if (modal_btn_multi.length[ElementIndex]){
                 console.log(ElementIndex, 'was selected');
             // }  
-               if (ElementIndex==1){
 
+                  if (ElementIndex==0){
                   console.log(ElementIndex, 'BOOOOM!');
-                    const vid = document.getElementById("vid2");
-                     function enableAutoplay() { 
-                     vid.autoplay = false;
-                     vid.load();
-                     }
+                  const vid1 = document.getElementById("vid1");
+                  // vid2.autoplay = true;
+                  //  vid2.load();
+                  vid1.play();
+                  }  
 
+                  if (ElementIndex==1){
+                  const vid2 = document.getElementById("vid2");
+                  // vid2.autoplay = true;
+                  // vid2.load();
+                   vid2.play();
                }
+
+            
+            
+            
+            
             };
 
             // When the user clicks on <span> (x), close the modal
