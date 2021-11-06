@@ -18,8 +18,6 @@
    justify-content: center;
    min-height: 100vh;
 }
-
-
 .svgcontainer{
     width: 50%;
     margin:auto;
@@ -33,9 +31,6 @@
             margin-left: 0;
 		}
 }
-
-
-
 #tubeMapSite{
     width:100%;
     height:100%;
@@ -45,7 +40,6 @@
    filter: invert(50%) sepia(51%) saturate(2878%) brightness(104%) contrast(97%);
  cursor: pointer;
 }
-
         /* The Modal (background) */
         .modal {
             /* display: none; Hidden by default */
@@ -67,7 +61,7 @@
         }
       @media screen and (max-width: 600px) {
 		.modal{
-         padding-top: 2px; /* Location of the box */
+         padding-top: 0px; /* Location of the box */
 		}
 }
         /* Modal Content */
@@ -88,7 +82,6 @@
         }
         @media screen and (max-width: 600px) {
 		.modal-content{
-         
          height:21rem;
 		}
 }
@@ -96,16 +89,21 @@
         .close {
             color: #444444;
             float: left;
-            font-size: 28px;
+            font-size: 30px;
             font-weight: bold;
             cursor: pointer;
         }
-
+        @media screen and (max-width: 600px) {
+		.close{
+         font-size: 34px;
+		}
+}
         .close:hover,
         .close:focus {
             color: #000;
             text-decoration: none;
             cursor: pointer;
+            
         }
         .prevImg{
     width: 100%; 
@@ -133,10 +131,6 @@ margin:10px
 
     
 <body>
-
-   
-   
-
     <!--test Trigger for modular Modal -->
     <!-- <button class="nodeBtn_multi">Open Modal</button>
     <button class="nodeBtn_multi">Open Modal2</button>
