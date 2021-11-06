@@ -118,26 +118,21 @@
          max-width: 450px;
 		}
 }
-        button{
+      button{
    background-color: rgb(107, 107, 107);
    color: #ffffff;
    border:0;
-border-radius: 5px;
-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-font-size: 15px;
-padding: 10px 15px;
-margin:10px
+   border-radius: 5px;
+   box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+   font-size: 15px;
+   padding: 10px 15px;
+   margin:10px
 }
     </style>
 
 
     
 <body>
-    <!--test Trigger for modular Modal -->
-    <!-- <button class="nodeBtn_multi">Open Modal</button>
-    <button class="nodeBtn_multi">Open Modal2</button>
-    <button class="nodeBtn_multi">Open Modal3</button> -->
-
     <!-- The Modal #1-->
     <div class="modal modal_multi">
         <!-- Modal content -->
@@ -1453,18 +1448,12 @@ margin:10px
     </svg>
     
     
-    
-      
-      
-      
-         
 
-            
+
+
+
+
         </div>
-
-
-
-
     <script>
    
 //mobile touch wont work on SVG elements without this () => {} noop handler
@@ -1516,7 +1505,6 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
                   const vid4 = document.getElementById("vid4");
                   vid4.play();
                }
-        
            }  
            
 
@@ -1526,7 +1514,7 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
                 modalparent[ElementIndex].style.opacity = 0;
                 modalparent[event.target.getAttribute('data-index')].style.pointerEvents = "none";
 
-                //pause preview videos by index of node opened
+               //pause preview videos by index of node opened
                if (ElementIndex==0){
                   const vid1 = document.getElementById("vid1");
                   vid1.pause();
@@ -1544,9 +1532,7 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
 
 
         window.onload = function() {
-        
          setDataIndex();  
-
          //resize the svg header text on page load
          //loop through all svg text 
         let svgHeadTxtResize = document.getElementsByClassName("svgHeaderTxt"); 
@@ -1564,7 +1550,7 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
            
         
         if (window.innerWidth <800 ) {
-      svgTxtResize[i].style.fontSize = "30em"; 
+      svgTxtResize[i].style.fontSize = "28em"; 
         }
         else {
          svgTxtResize[i].style.fontSize = "20em"; 
