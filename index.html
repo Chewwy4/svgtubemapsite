@@ -62,6 +62,7 @@
       @media screen and (max-width: 600px) {
 		.modal{
          padding-top: 0px; /* Location of the box */
+         
 		}
 }
         /* Modal Content */
@@ -182,7 +183,7 @@ margin:10px
     <div class="modal modal_multi">
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close close_multi">×</span>
+            <span class="close close_multi">    ×</span>
             <p>$10 on Steam</p>
             <video class="prevImg" id="vid4" loop="true">
                <source src="./src/video/prev_bordercontrol.m4v" type="video/mp4">
@@ -2356,7 +2357,7 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
                 modalparent[ElementIndex].style.opacity = 1;
                 modalparent[event.target.getAttribute('data-index')].style.pointerEvents = "auto";
 
-                //play modal videos by index
+                //play preview videos by index of node opened
                 console.log(ElementIndex, 'was selected');
                   if (ElementIndex==0){
                   const vid1 = document.getElementById("vid1");
@@ -2380,11 +2381,10 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
                 modalparent[ElementIndex].style.opacity = 0;
                 modalparent[event.target.getAttribute('data-index')].style.pointerEvents = "none";
 
-                //pause modal videos by index
+                //pause preview videos by index of node opened
                if (ElementIndex==0){
                   const vid1 = document.getElementById("vid1");
                   vid1.pause();
-                  console.log('video paused')
                   }  
                if (ElementIndex==1){
                   const vid2 = document.getElementById("vid2");
