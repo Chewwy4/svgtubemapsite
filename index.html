@@ -2326,7 +2326,8 @@ margin:10px
 
 
     <script>
-
+   
+//mobile touch wont work on SVG elements without this () => {} noop handler
 document.querySelector('svg').addEventListener('touchstart', () => {});
 
                      //modal
@@ -2412,7 +2413,7 @@ document.querySelector('svg').addEventListener('touchstart', () => {});
         let svgHeadTxtResize = document.getElementsByClassName("svgHeaderTxt"); 
         for (var i=0; i<svgHeadTxtResize.length; i++) {     
             if (window.innerWidth <800 ) {
-         svgHeadTxtResize[i].style.fontSize = "32em";   
+         svgHeadTxtResize[i].style.fontSize = "31em";   
             }
             else{
             svgHeadTxtResize[i].style.fontSize = "26em"; 
