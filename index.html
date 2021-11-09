@@ -83,7 +83,7 @@
         }
         @media screen and (max-width: 600px) {
 		.modal-content{
-         height:21rem;
+         height:30rem;
 		}
 }
         /* The Close Button */
@@ -117,6 +117,13 @@
 		.prevImg{
          max-width: 450px;
 		}
+}
+.prevImg.object-fit-fill {
+  object-fit: fill;
+}
+
+.prevImg.object-fit-cover {
+  object-fit: cover;
 }
       button{
    background-color: rgb(107, 107, 107);
@@ -188,7 +195,9 @@
                <!-- Modal content -->
                <div class="modal-content">
                    <span class="close close_multi">×</span>
-                   <p>Demo Reel 3D Animation</p>
+                   <p>Demo Reel - Richard McDermott - 3D Animation</p>
+                   
+                   <p></p>
                    <video class="prevImg" id="vid5" loop="true" controls="true" fullscreen="true">
                      <source src="./src/video/demolowresweb_480.mp4" type="video/mp4" >
                  </video><br>
