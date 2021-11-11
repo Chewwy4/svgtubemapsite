@@ -186,7 +186,9 @@
         <div class="modal-content">
             <span class="close close_multi">×</span>
             <p>J Greenah Tattoos</p>
-           
+            <video class="prevImg" id="vid3" loop="true">
+               <source src="./src/video/prev_tattoos.m4v" type="video/mp4">
+           </video>
             <button>Open site</button>
         </div>
     </div>
@@ -204,13 +206,11 @@
                <!-- Modal content -->
                <div class="modal-content">
                    <span class="close close_multi">×</span>
-                   <p>Demo Reel - Richard McDermott - 3D Animation</p>
-                   
-                   <p></p>
+                   <p>Demo Reel - 3D Animation</p>
                    <video class="prevImg" id="vid5" loop="true" controls="true" fullscreen="true">
                      <source src="./src/video/demolowresweb_480.mp4" type="video/mp4" >
                  </video><br>
-              <p>   Contact me: 07867514525</p>
+              
               </div>
           </div>
              <!-- The Modal #6 -->
@@ -1473,7 +1473,7 @@
         </div>
     <script>
    
-//mobile touch wont work on SVG elements without this () => {} noop handler
+//mobile touch wont work on SVG without this () => {} noop handler
 document.querySelector('svg').addEventListener('touchstart', () => {});
 
 //SVG Header Text 
@@ -1522,6 +1522,10 @@ let svgTxtResize = document.getElementsByClassName("svgLabelsTxt");
                   const vid2 = document.getElementById("vid2");
                    vid2.play();
                }
+               if (ElementIndex==2){
+                  const vid2 = document.getElementById("vid3");
+                   vid2.play();
+               }
                if (ElementIndex==4){
                   const vid5 = document.getElementById("vid5");
                   //vid5.play();
@@ -1547,6 +1551,10 @@ let svgTxtResize = document.getElementsByClassName("svgLabelsTxt");
                   }  
                if (ElementIndex==1){
                   const vid2 = document.getElementById("vid2");
+                   vid2.pause();
+               }
+               if (ElementIndex==2){
+                  const vid2 = document.getElementById("vid3");
                    vid2.pause();
                }
                if (ElementIndex==4){
