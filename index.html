@@ -188,7 +188,7 @@
             <video class="prevImg" id="vid2" loop="true">
                <source src="./src/video/prev_clock.mp4" type="video/mp4">
            </video><br>
-           <form action="https://chewwy4.github.io/staticsite02clock/"> <button>Open site</button></form>
+           <form action="https://chewwy4.github.io/siteclockgltb/"> <button>Open site</button></form>
         </div>
     </div>
    
@@ -925,7 +925,7 @@
        cy="162.54436"
        cx="311.64374"
        class="nodeBtnHead"
-       onclick="#contact" />
+       onclick="scrollToBottom()" />
     <ellipse
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd"
        id="ellipse126884"
@@ -1504,6 +1504,10 @@ let svgTxtResize = document.getElementsByClassName("svgLabelsTxt");
         let modal_btn_outerbox = document.getElementsByClassName("nodeBtn_outerbox");
         // Get the <span> element that closes the modal
          let span_close_multi = document.getElementsByClassName("close_multi");
+
+function scrollToBottom() {
+   ('contact').scrollIntoView(false);
+}
 
         // When the user clicks the button, open the modal
         function setDataIndex() {
