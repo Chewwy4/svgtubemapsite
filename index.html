@@ -1610,7 +1610,8 @@ function scrollToBottom() {
          }
             for (i = 0; i < modal_btn_multi.length; i++){ 
        //  modal_btn_multi[i].setAttribute("transform", "scale(1.35)");  
-        }        
+        }       
+
          //resize the svg header text on page load
          //loop through all svg text 
         for (let i=0; i<svgHeadTxtResize.length; i++) {     
@@ -1622,14 +1623,13 @@ function scrollToBottom() {
             else{
             svgHeadTxtResize[i].style.fontSize = "26em"; 
         }}
+        
          //resize the svg button text on page load
          //for all node button text indeces
      
        for (let i=0; i<svgTxtResize.length; i++) {
            
-        
         if (window.innerWidth <800 ) {
-      
       svgTxtResize[i].style.fontSize = "28em"; 
     //  svgTxtResize[i].setAttribute("transform", "translate(100, 0)");
         }
