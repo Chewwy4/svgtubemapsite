@@ -25,7 +25,7 @@
      showgrid="false"
      inkscape:zoom="26.036506"
      inkscape:cx="9.0833999"
-     inkscape:cy="10.312443"
+     inkscape:cy="13.385052"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1432"
@@ -49,20 +49,20 @@
        id="g22791"
        transform="matrix(0.77155012,0,0,0.77970904,-49.471819,-54.147748)">
       <ellipse
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00333626"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00321581"
          id="ellipse98324"
-         cx="67.364059"
-         cy="72.656319"
+         cx="67.317963"
+         cy="72.617226"
          class="nodeBtn_outerbox"
-         rx="3.1948035"
-         ry="3.1603835" />
+         rx="3.056509"
+         ry="3.0691519" />
       <ellipse
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00306825"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00295747"
          id="ellipse98326"
-         ry="2.5355704"
-         rx="2.5497084"
-         cy="72.699356"
-         cx="67.346893"
+         ry="2.4623754"
+         rx="2.4393382"
+         cy="72.659012"
+         cx="67.301544"
          class="nodeBtn_multi" />
     </g>
   </g>
