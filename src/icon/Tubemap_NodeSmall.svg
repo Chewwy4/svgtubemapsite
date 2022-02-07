@@ -49,20 +49,20 @@
        id="g22791"
        transform="matrix(0.77155012,0,0,0.77970904,-49.471819,-54.147748)">
       <ellipse
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00321581"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00332932"
          id="ellipse98324"
-         cx="67.317963"
-         cy="72.76059"
+         cx="67.377235"
+         cy="72.695419"
          class="nodeBtn_outerbox"
-         rx="3.056509"
-         ry="3.0691519" />
+         rx="3.2079744"
+         ry="3.1343172" />
       <ellipse
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00295747"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.00306186"
          id="ellipse98326"
-         ry="2.4623754"
-         rx="2.4393382"
-         cy="72.802376"
-         cx="67.301544"
+         ry="2.5146575"
+         rx="2.5602198"
+         cy="72.738098"
+         cx="67.360001"
          class="nodeBtn_multi" />
     </g>
   </g>
