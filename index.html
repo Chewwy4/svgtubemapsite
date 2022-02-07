@@ -235,13 +235,14 @@
       padding-left: 2em;
       padding-top: 2em;
       padding-bottom: 2em;
-      line-height: 2.5em;
+      line-height: 2em;
    }
 
    ul li:before {
       content: url("./src/icon/Tubemap_NodeSmall.svg");
       position: absolute;
       left: 0;
+      padding:5px
    }
 
    .demoReelSection {
@@ -302,9 +303,7 @@
 <body>
 
 
-<a id="sideIcon" href="https://github.com/Chewwy4">
-   
-</a>
+<a id="sideIcon" href="https://github.com/Chewwy4"></a>
 
 
    <div class="svgcontainer" style="text-align:center;">
@@ -1501,10 +1500,10 @@
    </div>
 
 
-   <script type="module" src="./src/SAK.js"></script>
+
    <script>
 
-      //mobile touch wont work on SVG without this () => {} noop handler
+      //mobile touch () => {} noop handler
       document.querySelector('svg').addEventListener('touchstart', () => { });
 
       //SVG Image
@@ -1626,7 +1625,6 @@
          //for all node button text indeces
 
          for (let i = 0; i < svgTxtResize.length; i++) {
-
             if (window.innerWidth < 800) {
                svgTxtResize[i].style.fontSize = "28em";
                //  svgTxtResize[i].setAttribute("transform", "translate(100, 0)");
