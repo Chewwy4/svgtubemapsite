@@ -226,6 +226,11 @@
       margin-bottom: 5rem;
       font-size: 20px;
    }
+   @media screen and (max-width: 800px) {
+      .htmlSection {
+         width: 90%;
+      }
+   }
    .htmlSection_p {
       margin-top: 6rem;
    }
@@ -255,7 +260,13 @@
       height: 0.5em;
      
    }
-
+   @media  screen and (max-width: 700px) {
+      .demoReelSection {
+         width:95%;
+      }
+      
+   }
+/* rename to SVGDemoReelButton */
    #svgButtonContainer {
       margin: auto;
       width: auto;
@@ -285,6 +296,12 @@
       opacity: 0.75;
       text-shadow: 3px 3px 5px #000;
    }
+   @media screen and (max-width: 600px) {
+      #sideIcon{
+         position:relative;
+         opacity: 1;
+      }
+   }
    #sideIcon:hover{
       opacity: 1;
    }
@@ -298,14 +315,21 @@
       /* position: fixed;
       bottom: 0; */
    }
+   .contactFormContainer{
+      background-color: #c70000;
+      height:15rem;
+      width: 75%;
+      margin:auto;
+      
+
+   }
 
 </style>
 
 <body>
 
 
-<a id="sideIcon" href="https://github.com/Chewwy4"></a>
-
+<div><a id="sideIcon" href="https://github.com/Chewwy4"></a></div>
 
    <div class="svgcontainer" style="text-align:center;">
       <svg id="tubeMapSite" viewBox="0 0 700 1250" preserveAspectRatio="xMidYMid">
@@ -1277,6 +1301,8 @@
 
    </div>
 
+
+   
    <div class="htmlSection">
       <p class="htmlSection_p">This is my site where you can see what I've been working on.
       </p>
@@ -1357,7 +1383,7 @@
          <li>Basic knowledge of MySQL</li>         
          <li>Adobe CS packages (Photoshop, After Effects)</li>
          
-      </ul>
+      <!-- </ul><div class="contactFormContainer"></div> -->
    </div>
    <div id="footer">© Copyright Richard McDermott 2022 
 </div>
@@ -1593,7 +1619,7 @@
                //  svgTxtResize[i].setAttribute("transform", "translate(100, 0)");
             }
             else {
-               svgTxtResize[i].style.fontSize = "20em";
+               svgTxtResize[i].style.fontSize = "17em";
             }
          }
          for (let i = 0; i < svgTxtAboutMeResize.length; i++) {
