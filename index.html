@@ -1412,6 +1412,9 @@
       <div class="modal-content">
          <!-- <span class="close close_multi">×</span> -->
          <p class="modalTitle">Desklamp</p>
+         <video class="prevImg" id="vid2" loop="true">
+            <source src="./src/video/prev_desklamp.mp4" type="video/mp4">
+         </video><br>
          <p class="modalDescription">React Three fiber Desklamp</p>
          <button class="close close_multi">Close </button>
          <form action="https://chewwy4.github.io/siteclockgltf/"> <button class="open open_multi">Open site</button>
@@ -1425,7 +1428,7 @@
       <div class="modal-content">
 
          <p class="modalTitle">Tatoo Site</p>
-         <video class="prevImg" id="vid2" loop="true">
+         <video class="prevImg" id="vid3" loop="true">
             <source src="./src/video/prev_tattoos.m4v" type="video/mp4">
          </video>
          <br>
@@ -1442,7 +1445,7 @@
       <div class="modal-content">
          <!-- <span class="close close_multi">×</span> -->
          <p class="modalTitle">3D Clock</p>
-         <video class="prevImg" id="vid3" loop="true">
+         <video class="prevImg" id="vid4" loop="true">
             <source src="./src/video/prev_clock.mp4" type="video/mp4">
          </video><br>
          <p class="modalDescription">Functioning 3D clock - tells the correct time. Made with Three.js. </p>
@@ -1540,16 +1543,16 @@
                vid1.play();
             }
             if (ElementIndex == 1) {
-               // const vid2 = document.getElementById("vid2");
-               // vid2.play();
-            }
-            if (ElementIndex == 2) {
                const vid2 = document.getElementById("vid2");
                vid2.play();
             }
-            if (ElementIndex == 3) {
-               const vid5 = document.getElementById("vid3");
+            if (ElementIndex == 2) {
+               const vid3 = document.getElementById("vid3");
                vid3.play();
+            }
+            if (ElementIndex == 3) {
+               const vid4 = document.getElementById("vid4");
+               vid4.play();
             }
             if (ElementIndex == 6) {
                const vid6 = document.getElementById("vid6");
@@ -1578,9 +1581,9 @@
                const vid2 = document.getElementById("vid3");
                vid2.pause();
             }
-            if (ElementIndex == 4) {
-               const vid5 = document.getElementById("vid5");
-               vid5.pause();
+            if (ElementIndex == 3) {
+               const vid4 = document.getElementById("vid4");
+               vid4.pause();
             }
             if (ElementIndex == 6) {
                const vid6 = document.getElementById("vid6");
