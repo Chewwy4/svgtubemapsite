@@ -1498,23 +1498,21 @@
       //mobile touch () => {} noop handler
       document.querySelector('svg').addEventListener('touchstart', () => { });
 
-      //SVG Image
+    
       const svgimage = document.getElementById("tubeMapSite");
-      //SVG Header Text 
+     
       let svgHeadTxtResize = document.getElementsByClassName("svgHeaderTxt");
-      //SVG Node button Text
+    
       let svgTxtResize = document.getElementsByClassName("svgLabelsTxt");
       let svgTxtAboutMeResize = document.getElementsByClassName("aboutMeTxt")
       //modal
-      // Get the modal
-
       let modalparent = document.getElementsByClassName("modal_multi");
 
-      // Get the button that opens the modal
+      
 
       let modal_btn_multi = document.getElementsByClassName("nodeBtn_multi");
       let modal_btn_outerbox = document.getElementsByClassName("nodeBtn_outerbox");
-      // Get the <span> element that closes the modal
+      
       let span_close_multi = document.getElementsByClassName("close_multi");
 
       function scrollToBottom() {
@@ -1565,7 +1563,7 @@
          }
 
 
-         // When the user clicks on close, close the modal
+        
          span_close_multi[i].onclick = function () {
             let ElementIndex = this.getAttribute('data-index');
             modalparent[ElementIndex].style.opacity = 0;
@@ -1601,7 +1599,6 @@
          setDataIndex();
 
          //resize the svg header text on page load
-         //loop through all svg text 
          for (let i = 0; i < svgHeadTxtResize.length; i++) {
             if (window.innerWidth < 800) {
 
@@ -1614,8 +1611,6 @@
          }
 
          //resize the svg button text on page load
-         //for all node button text indeces
-
          for (let i = 0; i < svgTxtResize.length; i++) {
             if (window.innerWidth < 800) {
                svgTxtResize[i].style.fontSize = "28em";
@@ -1635,13 +1630,9 @@
                svgTxtAboutMeResize[i].style.fontSize = "35px";
             }
          }
-
-
-
-
       }
 
-      ////scale on resizing
+
       window.onresize = function () {
          for (let i = 0; i < svgHeadTxtResize.length; i++) {
             if (window.innerWidth < 800) {
@@ -1651,12 +1642,7 @@
                svgHeadTxtResize[i].style.fontSize = "26em";
             }
          }
-         //resize the svg button text on page load
-         //for all node button text indeces
-
          for (let i = 0; i < svgTxtResize.length; i++) {
-
-
             if (window.innerWidth < 800) {
                svgTxtResize[i].style.fontSize = "29em";
             }
