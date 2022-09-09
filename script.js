@@ -136,3 +136,12 @@ window.onresize = function () {
       }
    }
 };
+let arr1 = ["fewf","what"]
+let newarr1 = [];
+for (let j=0; j<arr1.length;j++){
+   console.log(arr1[j]);
+   newarr1=arr1.slice(0,0);
+   console.log(newarr1[j]);
+
+}
+
